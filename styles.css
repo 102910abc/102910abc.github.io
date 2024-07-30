@@ -1,5 +1,5 @@
 
-table, th, td {
+table, th, td, tr {
   border:1px solid rgb(61, 56, 56);
   background-color: gray;
 }
