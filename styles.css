@@ -1,15 +1,101 @@
-
-table, th, td, tr {
-  border:1px solid rgb(0, 0, 0);
-  background-color: darkgray;
-}
-
 body {
-    color: lightgreen
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-div {
-    background-color:grey
+.sidebar {
+    width: 250px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.upgrade button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.conversation {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.message.response {
+    background-color: #e1f5fe;
+}
+
+.message-box {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.message-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 
