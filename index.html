@@ -3,61 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT</title>
+    <title>Dark Mode Chat Interface</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>ChatGPT</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About ChatGPT</h2>
-            <p>ChatGPT is a state-of-the-art language model that helps you with a variety of tasks, from answering questions to generating creative content.</p>
-        </div>
-    </section>
-
-    <section id="features">
-        <div class="container">
-            <h2>Features</h2>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
             <ul>
-                <li>Natural Language Processing</li>
-                <li>Text Generation</li>
-                <li>Question Answering</li>
-                <li>Conversational AI</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 ChatGPT. All rights reserved.</p>
-        </div>
-    </footer>
+        </aside>
+        <main class="main-content">
+            <div class="chat-container">
+                <div class="messages">
+                    <div class="message">Hello! How can I assist you today?</div>
+                    <!-- More messages here -->
+                </div>
+                <textarea class="input" placeholder="Type a message..."></textarea>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
