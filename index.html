@@ -3,41 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>ChatGPT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>ChatGPT</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="home">
-            <h2>Welcome to My Website</h2>
-            <p>This is the home section where you can find introductory information about the website.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about us in this section.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Details about the services we offer.</p>
-        </section>
-        <section id="contact">
+
+    <section id="about">
+        <div class="container">
+            <h2>About ChatGPT</h2>
+            <p>ChatGPT is a state-of-the-art language model that helps you with a variety of tasks, from answering questions to generating creative content.</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>Natural Language Processing</li>
+                <li>Text Generation</li>
+                <li>Question Answering</li>
+                <li>Conversational AI</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
             <h2>Contact Us</h2>
-            <p>Get in touch with us through this section.</p>
-        </section>
-    </main>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 ChatGPT. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
