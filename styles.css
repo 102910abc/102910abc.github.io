@@ -1,101 +1,97 @@
 body {
-    display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
 }
 
 .sidebar {
     width: 250px;
-    background-color: #f1f1f1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #f0f0f0;
     padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 .logo h2 {
     margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-.menu a {
-    display: block;
-    padding: 10px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
     margin: 10px 0;
+}
+
+nav ul li a {
     text-decoration: none;
     color: #000;
+    font-weight: bold;
 }
 
-.ChatGPT {
+.section-title {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.task {
+    margin-top: 10px;
+    background-color: #e0e0e0;
     padding: 10px;
-    width: 100%;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+    border-radius: 5px;
 }
 
 .main-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex: 1;
     padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
 }
 
-.profile {
-    width: 30px;
-    height: 30px;
-    background-color: #c0c0c0;
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-profile {
+    background-color: #d9b3ff;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 80px);
 }
 
-.content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    background-color: #f9f9f9;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.conversation {
-    flex-grow: 1;
-    overflow-y: auto;
-}
-
-.message {
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.message.response {
-    background-color: #e1f5fe;
-}
-
-.message-box {
-    display: flex;
-    padding: 10px;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-}
-
-.message-box input {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.card p {
+    margin: 0;
 }
 
 

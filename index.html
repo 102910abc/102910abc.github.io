@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConversationGPT</title>
+    <title>ChatGPT Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <h2>ConversationGPT</h2>
-        </div>
-        <div class="menu">
-            <a href="https://102910abc.github.io/#">ConversationGPT</a>
-            <a href="https://chatgpt.com/gpts">Explore GPTs</a>
-        </div>
-        <div class="ChatGPT">
-            <a href="https://chatgpt.com/">Real ChatGPT</a>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="header">
-            <h1>ConversationGPT</h1>
-            <div class="profile">
-                <span>MY</span>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>ChatGPT</h2>
             </div>
-        </div>
-        <div class="content">
-            <div class="conversation">
-                <div class="message">
-                    <p>Welcome to ConversationGPT, this is a place where you can learn about what I know. Despite not being advanced as ChatGPT, it is 100x better!</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Explore GPTs</a></li>
+                </ul>
+            </nav>
+            <div class="section-title">Today</div>
+            <div class="task">HTML and CSS Layout</div>
+        </aside>
+        <main class="main-content">
+            <header>
+                <div class="user-profile">
+                    <span class="user-initials">MY</span>
                 </div>
-                <div class="message response">
-                    <p>I'd be happy to help you with that! Could you please provide me with a description of the layout or a screenshot of the website you're referring to?</p>
+            </header>
+            <section class="cards">
+                <div class="card">
+                    <p>ChatGPT starter guide</p>
                 </div>
-            </div>
-            <div class="message-box">
-                <input type="text" placeholder="Message ConversationGPT">
-            </div>
-        </div>
+                <div class="card">
+                    <p>Content calendar for TikTok</p>
+                </div>
+                <div class="card">
+                    <p>Explain superconductors</p>
+                </div>
+                <div class="card">
+                    <p>Recipe with what's in my kitchen</p>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
