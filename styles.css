@@ -1,7 +1,11 @@
 
 table, th, td, tr {
-  border:1px solid lightgreen;
+  border:1px solid rgb(0, 0, 0);
   background-color: darkslategray;
+}
+
+body {
+    color: lightgreen
 }
 
 
