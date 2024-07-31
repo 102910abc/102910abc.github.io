@@ -45,9 +45,16 @@
         </main>
     </div>
 
-    <div id="auth-buttons">
-        <button id="login-btn" onclick="login()">Login</button>
-        <button id="logout-btn" onclick="logout()" style="display:none;">Logout</button>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="welcome-message" style="display:none;">
+        <h2>Welcome, <span id="user"></span>!</h2>
+        <button onclick="logout()">Logout</button>
     </div>
 
     <audio controls autoplay>
