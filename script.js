@@ -23,7 +23,7 @@ function validatePassword(password) {
     return password === "notobviouspassword"
 }
 
-document.getElementById('keywordInput').addEventListener('input', function() {
+document.getElementById('keywordInput').addEventListener('submit', function() {
     var keyword = this.value.toLowerCase();
     var response = document.getElementById('response');
     // var responseText = '';
@@ -49,6 +49,4 @@ document.getElementById('keywordInput').addEventListener('input', function() {
     } else {
         response.textContent = "Ask the AI";
     }
-
-    responseElement.textContent = responseText;
 });
