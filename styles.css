@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1e1e1e;
-    color: lightgreen;
+    color: #F1F1F1;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 }
 
 .sidebar h2 {
-    color: lightgreen;
+    color: #F1F1F1;
     margin-top: 0;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: lightgreen;
+    color: #F1F1F1;
     text-decoration: none;
     font-size: 18px;
 }
@@ -72,7 +72,7 @@ body {
     border-top: 1px solid #333;
     padding: 10px;
     background-color: #333;
-    color: lightgreen;
+    color: #F1F1F1;
     width: 100%;
     box-sizing: border-box;
 }
