@@ -15,9 +15,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 function validateUsername(username) {
-    return username.length >= 3;
+
+    return username === "Michael"
 }
 
 function validatePassword(password) {
-    return password.length >= 6;
+    return password === "notobviouspassword"
 }
