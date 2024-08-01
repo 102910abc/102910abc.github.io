@@ -1,28 +1,22 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-document.addEventListener('DOMContentLoaded', () => {
-    
-    const result = document.getElementById("result");
-
-    const user_input = document.getElementById("inputField");
-    const submit = document.getElementById("button");
-
-    submit.adEventListner("click", () => {
-        result.textCont = user_input.ariaValueMax;
-    });
-
-});
-
-function validateLogin() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('error-message');
 
-    // Simple validation
-    if (username === 'admin' && password === 'password123') {
-        alert('Login successful!');
-        return true;
+    if (validateUsername(username) && validatePassword(password)) {
+        errorMessage.textContent = '';
+        alert('Login Successful!');
     } else {
-        errorMessage.textContent = 'Invalid username or password';
-        return false;
+        errorMessage.textContent = 'Invalid username or password.';
     }
+});
+
+function validateUsername(username) {
+    return username.length >= 3;
+}
+
+function validatePassword(password) {
+    return password.length >= 6;
 }
