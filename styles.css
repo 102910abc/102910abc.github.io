@@ -93,8 +93,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Roboto Slab', 'sans serif';
+    background-color: #1e1e1e;
 }
 
 .container {
@@ -143,7 +143,7 @@ h2 {
     top: -10px;
     left: 10px;
     font-size: 12px;
-    color: #666;
+    color: #F1F1F1;
     background: white;
     padding: 0 5px;
 }
