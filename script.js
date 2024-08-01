@@ -7,7 +7,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (validateUsername(username) && validatePassword(password)) {
         errorMessage.textContent = '';
-        alert('Login Successful!');
+        // alert('Login Successful!');
+        window.location.href = 'index.html';
+        
     } else {
         errorMessage.textContent = 'Invalid username or password.';
     }
