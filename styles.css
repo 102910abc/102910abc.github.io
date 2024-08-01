@@ -77,4 +77,22 @@ body {
     box-sizing: border-box;
 }
 
+.next-page {
+    position: fixed; 
+    top: 10px; 
+    left: 10px; 
+    padding: 10px 20px; 
+    background-color: #222222; 
+    color: #F1F1F1; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    z-index: 1000; 
+}
+
+.next-page:hover {
+    background-color: #1b1a1a; 
+}
+
 
