@@ -31,7 +31,7 @@ function validatePassword(password) {
 document.getElementById('keywordInput').addEventListener('input', function() {
     var keyword = this.value.toLowerCase();
     var response = document.getElementById('response');
-3
+
     if (keyword === "basketball") {
         response.textContent = "Basketball is a fast-paced team sport where two teams of five players each compete to score points by shooting a ball through the opponent’s hoop. The game is played on a rectangular court with a hoop at each end. Players must dribble the ball while moving, and they aim to score either 2 or 3 points per field goal, or 1 point per free throw. The game consists of four quarters, with a shot clock limiting the time to take a shot. Key positions include the point guard, shooting guard, small forward, power forward, and center, each with distinct roles in scoring, defending, and playmaking.";
     } else if (keyword === "soccer") {
