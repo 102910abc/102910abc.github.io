@@ -24,12 +24,10 @@ function validatePassword(password) {
 }
 
 
-document.getElementById('interact').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    let input_field = document.getElementById('input');
-    const keyword = input_field.value.toLowerCase();
-    let response = document.getElementById('response');
+document.getElementById('keywordInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        let keyword = event.target.value.trim().toLowerCase();
+        let response = '';
 
     console.log(response, keyword);
 
@@ -54,7 +52,9 @@ document.getElementById('interact').addEventListener('submit', function(event) {
     } else {
         response.textContent = "Ask the AI";
     }
-});
+    document.getElementById('response').innerText = response;
+                event.target.value = '';
+}});
 
 
 
