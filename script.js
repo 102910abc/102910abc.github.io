@@ -36,7 +36,24 @@ document.getElementById('enterButton').addEventListener('click', function() {
             response = "Soccer, also known as football outside North America, is a team sport played on a rectangular field with a goal at each end. Each team has eleven players, including a goalkeeper, and the objective is to score goals by getting the ball into the opposing team’s net. The game is played in two halves of 45 minutes each, with additional stoppage time added at the referee's discretion. Players can use any part of their body except their arms and hands to control the ball, except for the goalkeeper, who can use their hands within their penalty area. The team with the most goals at the end of the match wins, and if the score is tied, the game may go into extra time or a penalty shootout, depending on the competition rules.";;
             break;
         case "piano":
-            response = 'You\'re welcome!';
+            response = "The piano is a versatile keyboard instrument with 88 keys, including both white and black keys, that produce sound when struck by hammers inside the instrument. It has a wide range of pitches, spanning seven octaves plus a minor third, from deep bass notes to high treble notes. The piano's keys are organized in a pattern of repeating octaves, and players use their fingers to press the keys, which causes the hammers to hit the corresponding strings. This action creates a rich variety of tones and dynamics, making the piano suitable for many music genres, from classical to jazz and pop. It is often used for solo performances, accompaniment, and composition.";;
+            break;
+        case "python":
+            response = "Python is a high-level, interpreted programming language known for its simplicity and readability, making it an excellent choice for both beginners and experienced developers. Its syntax emphasizes code readability with a focus on whitespace, and it supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python has a vast standard library and a rich ecosystem of third-party packages, allowing it to be used for a wide range of applications, from web development and data analysis to artificial intelligence and scientific computing. Its versatility and ease of use have made it one of the most popular programming languages in the world.";;
+        case "html":
+            response = "HTML (HyperText Markup Language) is the foundational language for creating and structuring web pages. It uses a system of tags and elements to define and organize content, such as headings, paragraphs, links, and images, within a webpage. Each element is enclosed in angle brackets (e.g., `<h1>`, `<p>`, `<a>`) and can include attributes that provide additional details or functionality. HTML documents form the backbone of web content, providing the structure that is styled and enhanced by CSS and made interactive with JavaScript.";;
+            break;
+        case "css":
+            response = "CSS (Cascading Style Sheets) is a language used to describe the presentation and layout of HTML elements on a webpage. It allows developers to control the visual appearance of web content by applying styles such as colors, fonts, spacing, and positioning. CSS works by selecting HTML elements through selectors and then applying styles through rules, which include properties and values (e.g., `color: red;`, `font-size: 16px;`). CSS enables responsive design, making web pages adaptable to different screen sizes and devices, and can be included directly within HTML documents or linked as separate stylesheets.";;      
+            break;
+        case "piano":
+            response = "The piano is a versatile keyboard instrument with 88 keys, including both white and black keys, that produce sound when struck by hammers inside the instrument. It has a wide range of pitches, spanning seven octaves plus a minor third, from deep bass notes to high treble notes. The piano's keys are organized in a pattern of repeating octaves, and players use their fingers to press the keys, which causes the hammers to hit the corresponding strings. This action creates a rich variety of tones and dynamics, making the piano suitable for many music genres, from classical to jazz and pop. It is often used for solo performances, accompaniment, and composition.";;
+            break; 
+        case "piano":
+            response = "The piano is a versatile keyboard instrument with 88 keys, including both white and black keys, that produce sound when struck by hammers inside the instrument. It has a wide range of pitches, spanning seven octaves plus a minor third, from deep bass notes to high treble notes. The piano's keys are organized in a pattern of repeating octaves, and players use their fingers to press the keys, which causes the hammers to hit the corresponding strings. This action creates a rich variety of tones and dynamics, making the piano suitable for many music genres, from classical to jazz and pop. It is often used for solo performances, accompaniment, and composition.";;
+            break;
+        case "piano":
+            response = "The piano is a versatile keyboard instrument with 88 keys, including both white and black keys, that produce sound when struck by hammers inside the instrument. It has a wide range of pitches, spanning seven octaves plus a minor third, from deep bass notes to high treble notes. The piano's keys are organized in a pattern of repeating octaves, and players use their fingers to press the keys, which causes the hammers to hit the corresponding strings. This action creates a rich variety of tones and dynamics, making the piano suitable for many music genres, from classical to jazz and pop. It is often used for solo performances, accompaniment, and composition.";;
             break;
         default:
             response = 'Ask the AI.';
@@ -46,12 +63,7 @@ document.getElementById('enterButton').addEventListener('click', function() {
     document.getElementById('keywordInput').value = '';
 });
 
-    if (keyword === "basketball") {
-        response.textContent = "Basketball is a fast-paced team sport where two teams of five players each compete to score points by shooting a ball through the opponent’s hoop. The game is played on a rectangular court with a hoop at each end. Players must dribble the ball while moving, and they aim to score either 2 or 3 points per field goal, or 1 point per free throw. The game consists of four quarters, with a shot clock limiting the time to take a shot. Key positions include the point guard, shooting guard, small forward, power forward, and center, each with distinct roles in scoring, defending, and playmaking.";
-    } else if (keyword === "soccer") {
-        response.textContent = "Soccer, also known as football outside North America, is a team sport played on a rectangular field with a goal at each end. Each team has eleven players, including a goalkeeper, and the objective is to score goals by getting the ball into the opposing team’s net. The game is played in two halves of 45 minutes each, with additional stoppage time added at the referee's discretion. Players can use any part of their body except their arms and hands to control the ball, except for the goalkeeper, who can use their hands within their penalty area. The team with the most goals at the end of the match wins, and if the score is tied, the game may go into extra time or a penalty shootout, depending on the competition rules.";
-    } else if (keyword === "piano") {
-        response.textContent = "The piano is a versatile keyboard instrument with 88 keys, including both white and black keys, that produce sound when struck by hammers inside the instrument. It has a wide range of pitches, spanning seven octaves plus a minor third, from deep bass notes to high treble notes. The piano's keys are organized in a pattern of repeating octaves, and players use their fingers to press the keys, which causes the hammers to hit the corresponding strings. This action creates a rich variety of tones and dynamics, making the piano suitable for many music genres, from classical to jazz and pop. It is often used for solo performances, accompaniment, and composition.";
+/*
     } else if (keyword === "python") {
         response.textContent = "Python is a high-level, interpreted programming language known for its simplicity and readability, making it an excellent choice for both beginners and experienced developers. Its syntax emphasizes code readability with a focus on whitespace, and it supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python has a vast standard library and a rich ecosystem of third-party packages, allowing it to be used for a wide range of applications, from web development and data analysis to artificial intelligence and scientific computing. Its versatility and ease of use have made it one of the most popular programming languages in the world.";
     } else if (keyword === "html") {
@@ -70,7 +82,7 @@ document.getElementById('enterButton').addEventListener('click', function() {
     document.getElementById('response').innerText = response;
                 event.target.value = '';
 }});
-
+*/
 
 
 
