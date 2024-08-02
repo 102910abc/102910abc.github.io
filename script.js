@@ -24,12 +24,27 @@ function validatePassword(password) {
 }
 
 
-document.getElementById('keywordInput').addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        let keyword = event.target.value.trim().toLowerCase();
-        let response = '';
+document.getElementById('enterButton').addEventListener('click', function() {
+    let keyword = document.getElementById('keywordInput').value.trim().toLowerCase();
+    let response = '';
 
-    console.log(response, keyword);
+    switch(keyword) {
+        case 'Hi there!':
+            response = "Basketball is a fast-paced team sport where two teams of five players each compete to score points by shooting a ball through the opponent’s hoop. The game is played on a rectangular court with a hoop at each end. Players must dribble the ball while moving, and they aim to score either 2 or 3 points per field goal, or 1 point per free throw. The game consists of four quarters, with a shot clock limiting the time to take a shot. Key positions include the point guard, shooting guard, small forward, power forward, and center, each with distinct roles in scoring, defending, and playmaking.";
+            break;
+        case "soccer":
+            response = "Soccer, also known as football outside North America, is a team sport played on a rectangular field with a goal at each end. Each team has eleven players, including a goalkeeper, and the objective is to score goals by getting the ball into the opposing team’s net. The game is played in two halves of 45 minutes each, with additional stoppage time added at the referee's discretion. Players can use any part of their body except their arms and hands to control the ball, except for the goalkeeper, who can use their hands within their penalty area. The team with the most goals at the end of the match wins, and if the score is tied, the game may go into extra time or a penalty shootout, depending on the competition rules.";;
+            break;
+        case "piano":
+            response = 'You\'re welcome!';
+            break;
+        default:
+            response = 'Ask the AI.';
+    }
+
+    document.getElementById('response').innerText = response;
+    document.getElementById('keywordInput').value = '';
+});
 
     if (keyword === "basketball") {
         response.textContent = "Basketball is a fast-paced team sport where two teams of five players each compete to score points by shooting a ball through the opponent’s hoop. The game is played on a rectangular court with a hoop at each end. Players must dribble the ball while moving, and they aim to score either 2 or 3 points per field goal, or 1 point per free throw. The game consists of four quarters, with a shot clock limiting the time to take a shot. Key positions include the point guard, shooting guard, small forward, power forward, and center, each with distinct roles in scoring, defending, and playmaking.";
@@ -50,7 +65,7 @@ document.getElementById('keywordInput').addEventListener('keydown', function(eve
     } else if (keyword === "basic life skills") {
         response.textContent = "Basic life skills are essential abilities that help individuals manage everyday tasks and navigate various aspects of life effectively. These skills include practical tasks such as cooking, cleaning, and managing personal finances, as well as interpersonal skills like communication, problem-solving, and time management. Additionally, basic life skills involve self-care practices such as maintaining hygiene, understanding health and nutrition, and setting personal goals. Mastery of these skills fosters independence, resilience, and the ability to handle challenges, contributing to overall well-being and success in both personal and professional contexts.";
     } else {
-        response.textContent = "Ask the AI";
+        response.textContent = "";
     }
     document.getElementById('response').innerText = response;
                 event.target.value = '';
